@@ -5,9 +5,11 @@ PODS:
   - Apollo (0.8.0):
     - Apollo/Core (= 0.8.0)
   - Apollo/Core (0.8.0)
+  - boost-for-react-native (1.63.0)
   - ContextMenu (0.1.0)
   - Crashlytics (3.9.3):
     - Fabric (~> 1.7.2)
+  - DoubleConversion (1.1.5)
   - Fabric (1.7.2)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
@@ -36,10 +38,28 @@ PODS:
   - FLAnimatedImage (1.0.12)
   - FlatCache (0.1.0)
   - FLEX (2.4.0)
+  - Folly (2016.09.26.00):
+    - boost-for-react-native
+    - DoubleConversion
+    - glog
+  - GitDawg (0.0.1):
+    - DoubleConversion (= 1.1.5)
+    - Folly (= 2016.09.26.00)
+    - glog (= 0.3.4)
+    - React/Core (= 0.54.0)
+    - React/CxxBridge (= 0.54.0)
+    - React/RCTAnimation (= 0.54.0)
+    - React/RCTCameraRoll (= 0.54.0)
+    - React/RCTImage (= 0.54.0)
+    - React/RCTLinkingIOS (= 0.54.0)
+    - React/RCTNetwork (= 0.54.0)
+    - React/RCTText (= 0.54.0)
+    - yoga (= 0.54.0.React)
   - GitHubAPI (0.1.0):
     - Alamofire (~> 4.4.0)
     - Apollo (~> 0.8.0)
   - GitHubSession (0.1.0)
+  - glog (0.3.4)
   - GoogleToolboxForMac/Defines (2.1.3)
   - GoogleToolboxForMac/NSData+zlib (2.1.3):
     - GoogleToolboxForMac/Defines (= 2.1.3)
@@ -67,6 +87,36 @@ PODS:
   - NYTPhotoViewer/Core (1.1.0)
   - Pageboy (2.2.0)
   - PureLayout (3.0.2)
+  - React/Core (0.54.0):
+    - yoga (= 0.54.0.React)
+  - React/CxxBridge (0.54.0):
+    - Folly (= 2016.09.26.00)
+    - React/Core
+    - React/cxxreact
+  - React/cxxreact (0.54.0):
+    - boost-for-react-native (= 1.63.0)
+    - Folly (= 2016.09.26.00)
+    - React/jschelpers
+    - React/jsinspector
+  - React/jschelpers (0.54.0):
+    - Folly (= 2016.09.26.00)
+    - React/PrivateDatabase
+  - React/jsinspector (0.54.0)
+  - React/PrivateDatabase (0.54.0)
+  - React/RCTAnimation (0.54.0):
+    - React/Core
+  - React/RCTCameraRoll (0.54.0):
+    - React/Core
+    - React/RCTImage
+  - React/RCTImage (0.54.0):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTLinkingIOS (0.54.0):
+    - React/Core
+  - React/RCTNetwork (0.54.0):
+    - React/Core
+  - React/RCTText (0.54.0):
+    - React/Core
   - SDWebImage/Core (4.0.0)
   - SDWebImage/GIF (4.0.0):
     - FLAnimatedImage (~> 1.0)
@@ -79,6 +129,7 @@ PODS:
     - Pageboy (~> 2.2.0)
     - PureLayout (~> 3.0)
   - TUSafariActivity (1.0.4)
+  - yoga (0.54.0.React)
 
 DEPENDENCIES:
   - AlamofireNetworkActivityIndicator (~> 2.1)
@@ -91,6 +142,7 @@ DEPENDENCIES:
   - Firebase/Database
   - FlatCache (from `https://github.com/GitHawkApp/FlatCache.git`, branch `master`)
   - FLEX (~> 2.0)
+  - GitDawg (from `../GitDawg`)
   - GitHubAPI (from `Local Pods/GitHubAPI`)
   - GitHubSession (from `Local Pods/GitHubSession`)
   - Highlightr (from `https://github.com/GitHawkApp/Highlightr.git`, branch `master`)
@@ -106,6 +158,7 @@ DEPENDENCIES:
   - SwipeCellKit (from `Local Pods/SwipeCellKit`)
   - Tabman (~> 1.1)
   - TUSafariActivity (~> 1.0.0)
+  - yoga (from `Local Pods/yoga.podspec.json`)
 
 EXTERNAL SOURCES:
   Apollo:
@@ -117,6 +170,8 @@ EXTERNAL SOURCES:
   FlatCache:
     :branch: master
     :git: https://github.com/GitHawkApp/FlatCache.git
+  GitDawg:
+    :path: ../GitDawg
   GitHubAPI:
     :path: Local Pods/GitHubAPI
   GitHubSession:
@@ -138,6 +193,8 @@ EXTERNAL SOURCES:
     :git: https://github.com/GitHawkApp/StyledText.git
   SwipeCellKit:
     :path: Local Pods/SwipeCellKit
+  yoga:
+    :podspec: Local Pods/yoga.podspec.json
 
 CHECKOUT OPTIONS:
   Apollo:
@@ -169,8 +226,10 @@ SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   AlamofireNetworkActivityIndicator: 4716f6554bdfb9c7cf13b1e0e3af21163129690a
   Apollo: 222a3bee521f814317f55fc68c94cbf59c75479d
+  boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   ContextMenu: c9a4b218acc1a5f23bd1857e65d15658582f2a33
   Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
+  DoubleConversion: e22e0762848812a87afd67ffda3998d9ef29170c
   Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Firebase: 710decbbc6d9d48530e9a5dba3209740c3532e05
@@ -181,8 +240,11 @@ SPEC CHECKSUMS:
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FlatCache: e67d3d45a0f76b93e66883b802051dcbf9d50649
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  Folly: 211775e49d8da0ca658aebc8eab89d642935755c
+  GitDawg: 86f4bb56cc7bfd1c9200618df922865ab9b03016
   GitHubAPI: f251aefb91a951512010969347bc6bd7bb21807c
   GitHubSession: 2bf423872d89755b872ec6cbad4c53c9835beb4f
+  glog: 1de0bb937dccdc981596d3b5825ebfb765017ded
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   Highlightr: 70c4df19e4aa55aa1b4387fb98182abce1dec9da
   HTMLString: 8d9a8a8aaf63dd52c5b8cd9a38e14da52f753210
@@ -194,6 +256,7 @@ SPEC CHECKSUMS:
   NYTPhotoViewer: e80e8767f3780d2df37c6f72cbab15d6c7232911
   Pageboy: 50db8fffaa6d4d004249b7b6b19e33464dd7505b
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  React: a662c315de87b99370cb76450dcc0d54e606b295
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   StyledText: 18cf3224f09dab0c73223effe1ee2fdedefcfb8b
@@ -201,7 +264,8 @@ SPEC CHECKSUMS:
   SwipeCellKit: 67c91d4641d05b7e8ff1a38f57697d8c0fbcc6cc
   Tabman: 5951d9c5bc4e438e1c82b7e59e5cdc9f505c1431
   TUSafariActivity: afc55a00965377939107ce4fdc7f951f62454546
+  yoga: 671e65bb3c338564ec4cbbdf3b9a78fa25aac229
 
-PODFILE CHECKSUM: 6e26ed6df15d767a1bbc55e12021bec352e87579
+PODFILE CHECKSUM: a9bef40693b19086fa20a052ace59ec18b1b88f7
 
 COCOAPODS: 1.4.0

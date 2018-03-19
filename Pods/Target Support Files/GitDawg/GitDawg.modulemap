@@ -1,0 +1,6 @@
+framework module GitDawg {
+  umbrella header "GitDawg-umbrella.h"
+
+  export *
+  module * { export * }
+}

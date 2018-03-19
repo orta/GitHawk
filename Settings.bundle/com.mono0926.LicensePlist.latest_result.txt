@@ -15,6 +15,9 @@ Cop…
 name: Crashlytics, nameSpecified: 
 body: Fabric: Copyright 20…
 
+name: DoubleConversion, nameSpecified: 
+body: Copyright 2006-2011,…
+
 name: FLAnimatedImage, nameSpecified: 
 body: The MIT License (MIT…
 
@@ -43,6 +46,13 @@ name: FlatCache, nameSpecified:
 body: The MIT License
 
 Cop…
+
+name: Folly, nameSpecified: 
+body: 
+                   …
+
+name: GitDawg, nameSpecified: 
+body: Copyright (c) 2018 o…
 
 name: GoogleToolboxForMac, nameSpecified: 
 body: 
@@ -78,6 +88,11 @@ Copyrig…
 name: PureLayout, nameSpecified: 
 body: This code is distrib…
 
+name: React, nameSpecified: 
+body: BSD License
+
+For Rea…
+
 name: SDWebImage, nameSpecified: 
 body: Copyright (c) 2016 O…
 
@@ -104,11 +119,22 @@ body: MIT License
 
 Copyrig…
 
+name: boost-for-react-native, nameSpecified: 
+body: Boost Software Licen…
+
+name: glog, nameSpecified: 
+body: Copyright (c) 2008, …
+
 name: leveldb-library, nameSpecified: 
 body: Copyright (c) 2011 T…
 
 name: nanopb, nameSpecified: 
 body: Copyright (c) 2011 P…
+
+name: yoga, nameSpecified: 
+body: BSD License
+
+For Rea…
 
 name: Alamofire, nameSpecified: 
 body: Copyright (c) 2014-2…
@@ -127,6 +153,9 @@ Cop…
 name: Crashlytics, nameSpecified: 
 body: Fabric: Copyright 20…
 
+name: DoubleConversion, nameSpecified: 
+body: Copyright 2006-2011,…
+
 name: FLAnimatedImage, nameSpecified: 
 body: The MIT License (MIT…
 
@@ -155,6 +184,13 @@ name: FlatCache, nameSpecified:
 body: The MIT License
 
 Cop…
+
+name: Folly, nameSpecified: 
+body: 
+                   …
+
+name: GitDawg, nameSpecified: 
+body: Copyright (c) 2018 o…
 
 name: GoogleToolboxForMac, nameSpecified: 
 body: 
@@ -190,6 +226,11 @@ Copyrig…
 name: PureLayout, nameSpecified: 
 body: This code is distrib…
 
+name: React, nameSpecified: 
+body: BSD License
+
+For Rea…
+
 name: SDWebImage, nameSpecified: 
 body: Copyright (c) 2016 O…
 
@@ -216,11 +257,22 @@ body: MIT License
 
 Copyrig…
 
+name: boost-for-react-native, nameSpecified: 
+body: Boost Software Licen…
+
+name: glog, nameSpecified: 
+body: Copyright (c) 2008, …
+
 name: leveldb-library, nameSpecified: 
 body: Copyright (c) 2011 T…
 
 name: nanopb, nameSpecified: 
 body: Copyright (c) 2011 P…
+
+name: yoga, nameSpecified: 
+body: BSD License
+
+For Rea…
 
 name: FBSnapshotTestCase, nameSpecified: 
 body: BSD License
