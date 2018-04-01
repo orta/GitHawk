@@ -18,31 +18,31 @@
   "resources": "Pod/Assets/{GitDawg.js,assets}",
   "dependencies": {
     "React/Core": [
-      "0.54.0"
+      "0.54.4"
     ],
     "React/CxxBridge": [
-      "0.54.0"
+      "0.54.4"
     ],
     "React/RCTAnimation": [
-      "0.54.0"
+      "0.54.4"
     ],
     "React/RCTCameraRoll": [
-      "0.54.0"
+      "0.54.4"
     ],
     "React/RCTImage": [
-      "0.54.0"
+      "0.54.4"
     ],
     "React/RCTLinkingIOS": [
-      "0.54.0"
+      "0.54.4"
     ],
     "React/RCTNetwork": [
-      "0.54.0"
+      "0.54.4"
     ],
     "React/RCTText": [
-      "0.54.0"
+      "0.54.4"
     ],
     "yoga": [
-      "0.54.0.React"
+      "0.54.4.React"
     ],
     "DoubleConversion": [
       "1.1.5"

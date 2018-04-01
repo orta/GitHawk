@@ -45,10 +45,10 @@ LoadMoreSectionControllerDelegate {
 
     init(
         emptyErrorMessage: String,
-        dataSource: BaseListViewControllerDataSource
+//        dataSource: BaseListViewControllerDataSource
         ) {
         self.emptyErrorMessage = emptyErrorMessage
-        self.dataSource = dataSource
+//        self.dataSource = dataSource
         super.init(nibName: nil, bundle: nil)
     }
 

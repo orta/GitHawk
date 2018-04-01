@@ -77,7 +77,7 @@ typedef id<RCTBridgeModule>(^RCTBridgeModuleProvider)(void);
  * Returns the module method dispatch queue. Note that this will init both the
  * queue and the module itself if they have not already been created.
  */
-@property (nonatomic, strong, readonly) dispatch_queue_t methodQueue;
+@property (nonatomic, assign, readonly) dispatch_queue_t methodQueue;
 
 /**
  * Whether the receiver has a valid `instance` which implements -batchDidComplete.

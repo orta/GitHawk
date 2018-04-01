@@ -24,6 +24,7 @@ typedef NS_OPTIONS(NSInteger, RCTSurfaceSizeMeasureMode) {
   RCTSurfaceSizeMeasureModeHeightAtMost      = 2 << 2,
 };
 
+#ifdef __cplusplus
 /**
  * Returns size constraints based on `size` and `sizeMeasureMode`.
  */
@@ -33,3 +34,4 @@ RCT_EXTERN void RCTSurfaceMinimumSizeAndMaximumSizeFromSizeAndSizeMeasureMode(
   CGSize &minimumSize,
   CGSize &maximumSize
 );
+#endif

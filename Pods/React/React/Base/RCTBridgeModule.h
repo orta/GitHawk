@@ -109,7 +109,7 @@ RCT_EXTERN void RCTRegisterModule(Class); \
  * and the bridge will populate the methodQueue property for you automatically
  * when it initializes the module.
  */
-@property (nonatomic, strong, readonly) dispatch_queue_t methodQueue;
+@property (nonatomic, assign, readonly) dispatch_queue_t methodQueue;
 
 /**
  * Wrap the parameter line of your method implementation with this macro to

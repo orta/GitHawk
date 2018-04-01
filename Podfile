@@ -41,7 +41,9 @@ pod 'SwipeCellKit', :path => 'Local Pods/SwipeCellKit'
 pod 'GitHubAPI', :path => 'Local Pods/GitHubAPI'
 pod 'GitHubSession', :path => 'Local Pods/GitHubSession'
 
+plugin 'cocoapods-fix-react-native'
 pod 'GitDawg', :path => '../GitDawg'
+pod 'React', :podspec => 'Local Pods/React.podspec.json'
 pod 'yoga', :podspec => 'Local Pods/yoga.podspec.json'
 
 target 'Freetime' do
@@ -52,17 +54,10 @@ target 'FreetimeTests' do
 	pod 'FBSnapshotTestCase'
 end
 
-def edit_pod_file(file, old_code, new_code)
-  code = File.read(file)
-  if code.include?(old_code)
-    FileUtils.chmod("+w", file)
-    File.write(file, code.sub(old_code, new_code))
-  end
-end
 
 post_install do |installer|
   system("sh tools/generateAcknowledgements.sh")
-
+  
   installer.pod_targets.each do |target|
     # Build React Native with RCT_DEV disabled
     next unless target.pod_name == 'React'
@@ -72,17 +67,4 @@ post_install do |installer|
       config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'RCT_DEBUG=0'
     end
   end
-
-  # https://github.com/facebook/react-native/pull/14664
-  animation_view_file = "Pods/React/Libraries/NativeAnimation/RCTNativeAnimatedNodesManager.h"
-  animation_view_old_code = "import <RCTAnimation/RCTValueAnimatedNode.h>"
-  animation_view_new_code = 'import "RCTValueAnimatedNode.h"'
-  edit_pod_file animation_view_file, animation_view_old_code, animation_view_new_code
-
-  # There's an extra dev-only import
-  animation_view_file = "Pods/React/React/Modules/RCTDevSettings.mm"
-  animation_view_old_code = '#import "RCTPackagerClient.h"'
-  animation_view_new_code = '#if RCT_DEV\n#import "RCTPackagerClient.h"\n#endif'
-  edit_pod_file animation_view_file, animation_view_old_code, animation_view_new_code
-
 end
