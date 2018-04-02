@@ -9,6 +9,7 @@
 import UIKit
 import GitHubAPI
 import GitHubSession
+import GitDawg
 
 final class RootNavigationManager: GitHubSessionListener {
 
@@ -74,7 +75,7 @@ final class RootNavigationManager: GitHubSessionListener {
         tabBarController?.viewControllers = [
             newNotificationsRootViewController(client: client),
             newSearchRootViewController(client: client),
-            newBookmarksRootViewController(client: client),
+            GDWelcomeViewController(),
             settingsRootViewController ?? UIViewController() // simply satisfying compiler
         ]
     }
