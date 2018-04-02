@@ -135,7 +135,7 @@ PODS:
 
 DEPENDENCIES:
   - AlamofireNetworkActivityIndicator (~> 2.1)
-  - Apollo (from `https://github.com/orta/apollo-ios.git`, branch `support_local`)
+  - Apollo (from `https://github.com/apollographql/apollo-ios.git`, commit `2d2ce2ef7064ef615efa58d1859745d2d5228670`)
   - ContextMenu (from `https://github.com/GitHawkApp/ContextMenu.git`, branch `master`)
   - Crashlytics
   - Fabric
@@ -165,8 +165,8 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   Apollo:
-    :branch: support_local
-    :git: https://github.com/orta/apollo-ios.git
+    :commit: 2d2ce2ef7064ef615efa58d1859745d2d5228670
+    :git: https://github.com/apollographql/apollo-ios.git
   ContextMenu:
     :branch: master
     :git: https://github.com/GitHawkApp/ContextMenu.git
@@ -203,8 +203,8 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Apollo:
-    :commit: 74acf4b116b585fecafb68c8ad60d3d897e96481
-    :git: https://github.com/orta/apollo-ios.git
+    :commit: 2d2ce2ef7064ef615efa58d1859745d2d5228670
+    :git: https://github.com/apollographql/apollo-ios.git
   ContextMenu:
     :commit: bac5362e41f9c0322f341b8cd9eb32992ea1d8fe
     :git: https://github.com/GitHawkApp/ContextMenu.git
@@ -221,10 +221,10 @@ CHECKOUT OPTIONS:
     :commit: e985c533f3dcefcd98dc836c65e141afca2fe23c
     :git: https://github.com/GitHawkApp/MessageViewController.git
   MMMarkdown:
-    :commit: 97d03799f2b2745c903b6063d65adeec8f4f710d
+    :commit: c919c3ba5e2590620b736da3202e9e38f099ef3b
     :git: https://github.com/GitHawkApp/MMMarkdown.git
   StyledText:
-    :commit: fbc274b1dfe18134791ac285f300cb4dc848672e
+    :commit: c9c58444decbbe2fac29b8af5741c8ea3a48887e
     :git: https://github.com/GitHawkApp/StyledText.git
 
 SPEC CHECKSUMS:
@@ -271,6 +271,6 @@ SPEC CHECKSUMS:
   TUSafariActivity: afc55a00965377939107ce4fdc7f951f62454546
   yoga: 2d62f977621cc5aaab19cf8a835bf01def37caaf
 
-PODFILE CHECKSUM: c07e74f081fa043f2f294d5917616da1935aba6a
+PODFILE CHECKSUM: a1d283af3955485e99f576cd7e7b8e3522d9a11e
 
 COCOAPODS: 1.4.0

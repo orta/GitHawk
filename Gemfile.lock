@@ -1,7 +1,7 @@
 PATH
   remote: ../../../../react-native/cocoapods-fix-react-native
   specs:
-    cocoapods-fix-react-native (2018.04.01.15)
+    cocoapods-fix-react-native (2018.04.01.20)
 
 GEM
   remote: https://rubygems.org/

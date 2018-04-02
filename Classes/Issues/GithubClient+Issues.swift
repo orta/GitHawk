@@ -74,6 +74,7 @@ extension GithubClient {
                         id: issueType.id,
                         commentFields: issueType.commentFields,
                         reactionFields: issueType.reactionFields,
+                        contentSizeCategory: contentSizeCategory,
                         width: width,
                         owner: owner,
                         repo: repo,
@@ -129,7 +130,7 @@ extension GithubClient {
                         id: issueType.id,
                         pullRequest: issueType.pullRequest,
                         status: IssueStatusModel(status: status, pullRequest: issueType.pullRequest, locked: issueType.locked),
-                        title: titleStringSizing(title: issueType.title, width: width),
+                        title: titleStringSizing(title: issueType.title, contentSizeCategory: contentSizeCategory, width: width),
                         labels: IssueLabelsModel(labels: issueType.labelableFields.issueLabelModels),
                         assignee: createAssigneeModel(assigneeFields: issueType.assigneeFields),
                         rootComment: rootComment,
@@ -316,6 +317,7 @@ extension GithubClient {
         ) {
         guard let actor = userSession?.username else { return }
 
+        let contentSizeCategory = UIApplication.shared.preferredContentSizeCategory
         let oldLabelNames = Set<String>(previous.labels.labels.map { $0.name })
         let newLabelNames = Set<String>(labels.map { $0.name })
 
@@ -331,6 +333,7 @@ extension GithubClient {
                     type: .added,
                     repoOwner: owner,
                     repoName: repo,
+                    contentSizeCategory: contentSizeCategory,
                     width: 0
                 ))
             }
@@ -346,6 +349,7 @@ extension GithubClient {
                     type: .removed,
                     repoOwner: owner,
                     repoName: repo,
+                    contentSizeCategory: contentSizeCategory,
                     width: 0
                 ))
             }
@@ -403,6 +407,7 @@ extension GithubClient {
         var newEvents = [IssueRequestModel]()
         var added = [String]()
         var removed = [String]()
+        let contentSizeCategory = UIApplication.shared.preferredContentSizeCategory
 
         for old in oldAssigness {
             if !newAssignees.contains(old) {
@@ -413,6 +418,7 @@ extension GithubClient {
                     user: old,
                     date: Date(),
                     event: removedType,
+                    contentSizeCategory: contentSizeCategory,
                     width: 0 // will be inflated when asked
                 ))
             }
@@ -426,6 +432,7 @@ extension GithubClient {
                     user: new,
                     date: Date(),
                     event: addedType,
+                    contentSizeCategory: contentSizeCategory,
                     width: 0 // will be inflated when asked
                 ))
             }

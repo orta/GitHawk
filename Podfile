@@ -22,7 +22,7 @@ pod 'Firebase/Core'
 pod 'Firebase/Database'
 
 # fork
-pod 'Apollo', :git => 'https://github.com/orta/apollo-ios.git', :branch => 'support_local'
+pod 'Apollo', :git => 'https://github.com/apollographql/apollo-ios.git', :commit => '2d2ce2ef7064ef615efa58d1859745d2d5228670'
 
 # prerelease pods
 pod 'IGListKit/Swift', :git => 'https://github.com/Instagram/IGListKit.git', :branch => 'swift'
