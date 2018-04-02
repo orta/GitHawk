@@ -12,6 +12,7 @@ import AlamofireNetworkActivityIndicator
 import Fabric
 import Crashlytics
 import Firebase
+import FirebaseDatabase
 import GitHubSession
 
 @UIApplicationMain

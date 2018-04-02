@@ -20,7 +20,7 @@
 #import "RCTEventDispatcher.h"
 #import "RCTJSCSamplingProfiler.h"
 #import "RCTLog.h"
-#import "RCTPackagerClient.h"
+//#import //"RCTPackagerClient.h"
 #import "RCTProfile.h"
 #import "RCTUtils.h"
 
